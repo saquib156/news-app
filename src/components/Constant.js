@@ -1,0 +1,1 @@
+export const CategoryLists = ["India", "Business", "Sports", "Worlds", "Politics", "Technology", "Startup", "Entertainment", ];
