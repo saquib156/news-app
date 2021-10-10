@@ -11,7 +11,7 @@ const NewsList = () => {
     const fetchLatestNews = async () => {
 
         const res = await fetch(
-          `https://newsapi.org/v2/everything?q=All News&apiKey=5ca6bdcc309c426a9bb262ce6f1a6b81`
+          `https://newsapi.org/v2/everything?q=Technology&apiKey=5ca6bdcc309c426a9bb262ce6f1a6b81`
         ).then((res) => res.json());
         console.log(res.articles);
         setAllNews(res.articles);
