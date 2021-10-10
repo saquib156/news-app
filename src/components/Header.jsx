@@ -29,7 +29,7 @@ const Header = () => {
                     
                 </Drawer>
 
-                <div class="menu">
+                <div className="menu">
                     <IconButton
                         edge="start"
                         color="inherit"
