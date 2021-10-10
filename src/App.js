@@ -2,11 +2,12 @@ import './App.css';
 import Header from './components/Header';
 import NewsList from './components/NewsList';
 import FilterNews from './components/FilterNews';
+import Footer from './components/Footer';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/news-app">
       <div className="App">
         <Header />
         <Switch>
@@ -14,6 +15,7 @@ function App() {
           <Route path="/read/:category" component={FilterNews} />
         </Switch>
         <NewsList />
+        <Footer />
       </div>
     </Router>
   );
